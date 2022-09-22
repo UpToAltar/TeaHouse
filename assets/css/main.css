@@ -396,7 +396,7 @@
 
 /* body about */
 .body__about-wrap{
-    background: url('/assets/img/about-bg-img.webp');
+    background: url('../img/about-bg-img.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
