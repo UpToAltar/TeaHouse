@@ -460,19 +460,27 @@
     font-weight: 700;
     color: var(--text-color);
 }
-.body__menu-nav-link--active{
+.body__menu-nav-link.active{
     color: var(--white-color);
     background-color: var(--primary-color);
 }
 .body__menu-nav-link:hover{
     color: var(--white-color);
     background-color: var(--primary-color);
+    cursor: pointer;
 }
 
 
 /* body menu items */
+
 .body__menu-wrap{
     padding-bottom: 50px;
+}
+.body__menu-list{
+    display: none;
+}
+.body__menu-list.active{
+    display: flex;
 }
 .body__menu-list-item{
     
@@ -529,6 +537,7 @@
 .body__menu-list-link-desc{
     font-size: 1.8rem;
     text-align: center;
+    line-height: 1.3;
     color: var(--text-color);
     font-weight: 700;
 

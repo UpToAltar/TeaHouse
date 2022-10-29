@@ -7,9 +7,7 @@
     --soft-color:#fdede9;
     --star-gold:#FFCE3E;
     --navbar-height:45px;
-    --header-height:170px;
-    
-    --header-with-search-height: ;
+    --header-height:170px; 
 }
 .white-color{
     color: #fff !important;
@@ -37,8 +35,9 @@ li{
 html{
     font-size: 62.5%;
     line-height: 1.6rem;
-    font-family: 'Quicksand', sans-serif;
+    
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
     
 } 
 
