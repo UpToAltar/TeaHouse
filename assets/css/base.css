@@ -125,6 +125,7 @@ html{
     font-size: 1.4rem;
     color: var(--text-color);
     font-weight: 700;
+    cursor: pointer;
 }
 .mt__header-menu-special{
     font-size: 1.4rem;
@@ -135,6 +136,7 @@ html{
     font-size: 1.4rem;
     color: var(--text-color);
     font-weight: 700;
+    cursor: pointer;
 }
 
 .mt__header-menu-item{

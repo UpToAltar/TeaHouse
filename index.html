@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css">
+    
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -51,17 +51,17 @@
                                 </div>
                             </li>
                             <li class="header__navbar-item navbar-item-display">
-                                <a href="#" class="header__navbar-link-right ">
+                                <a href="" class="header__navbar-link-right ">
                                     <i class="header__navbar-icon bx bxs-user"></i>
                                     Tài Khoản
                                 </a>
                                 <div class="user__notify">
                                     <ul class="user__notify-list">
                                         <li class="user__notify-item">
-                                            <a href="" class="user__notify-link">Đăng ký</a>
+                                            <span href="" class="user__notify-link sign-up-show">Đăng ký</span>
                                         </li>
                                         <li class="user__notify-item">
-                                            <a href="" class="user__notify-link">Đăng nhập</a>
+                                            <span href="" class="user__notify-link sign-in-show">Đăng nhập</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -146,9 +146,9 @@
             <label class="mt__header-overlay" for="checkbox-hidden"></label>
             <div class="mt__header-menu">
                 <div class="mt__header-menu-heading">
-                    <a href="" class="mt__header-menu-login">Đăng nhập</a>
+                    <span href="" class="mt__header-menu-login">Đăng nhập</span>
                     <a href="" class="mt__header-menu-special">/</a>
-                    <a href="" class="mt__header-menu-register">Đăng ký</a>
+                    <span href="" class="mt__header-menu-register">Đăng ký</span>
                 </div>
                 <div class="mt__header-menu-list">
                     <li class="mt__header-menu-item">
@@ -668,7 +668,7 @@
                                     <button class="body__menu-list-link-btn">Thêm vào giỏ hàng</button>
                                 </div>
                                 
-                                <p class="body__menu-list-link-desc">BÔNG lAN CUỘN TRÀ XANH</p>
+                                <p class="body__menu-list-link-desc">BÔNG LAN CUỘN TRÀ XANH</p>
                                 <p class="body__menu-list-link-price">Giá: <span>
                                     25.000đ
                                 </span></p>
@@ -882,8 +882,98 @@
         <div class="go-to-head">
             <a href="#header" title="Lên đầu trang"><i class='bx bxs-chevron-up-circle'></i></a>
         </div>
+
+        
+        <div class="overlay-login"></div>
+        <div class="login">
+            <div class="login-img">
+                <img src="./assets/img/banner/picture_3.webp" alt="">
+            </div>
+            <!-- Đăng kí -->
+            <div id="toast"></div>
+            <form action="" id="form-signup">
+                <div class="signup-close">
+                    <i class='bx bxs-x-circle'></i>
+                </div>
+                <div class="signup-head">
+                    <h3>Đăng kí</h3>
+                    <div class="signup-head-icon">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-google'></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullname-signup" class="form-label">Tên đăng nhập</label>
+                    <input id="fullname-signup" name="fullname-signup" type="text" placeholder="VD: Quân Đào" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email-signup" class="form-label">Email</label>
+                    <input id="email-signup" name="email-signup" type="email" placeholder="VD:quan@gmail.com" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password-signup" class="form-label">Mật khẩu</label>
+                    <input id="password-signup" name="password-signup" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password-signup" class="form-label">Nhập lại mật khẩu</label>
+                    <input id="confirm-password-signup" name="confirm-password-signup" type="password" placeholder="Nhập lại mật khẩu" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+
+                <button class="form-submit">Đăng ký</button>
+
+                <div class="signup-help">
+                    <span>Bạn đã có tài khoản ?</span>
+                    <span class="signup-help-show-signin">Đăng nhập</span>
+                </div>
+            </form>
+            <!-- Đăng nhập -->
+            <form action="" id="form-signin">
+                <div class="signin-close">
+                    <i class='bx bxs-x-circle'></i>
+                </div>
+                <div class="signin-head">
+                    <h3>Đăng Nhập</h3>
+                    <div class="signin-head-icon">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-google'></i>
+                    </div>
+                </div>
+            
+                <div class="form-group">
+                    <label for="fullname-signin" class="form-label">Tên đăng nhập</label>
+                    <input id="fullname-signin" name="fullname-signin" type="text" placeholder="VD: Quân Đào" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+            
+                <div class="form-group">
+                    <label for="password-signin" class="form-label">Mật khẩu</label>
+                    <input id="password-signin" name="password-signin" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                    <span class="form-message"></span>
+                </div>
+
+                <button class="form-submit">Đăng nhập</button>
+
+                <div class="signin-help">
+                    <span>Bạn chưa có tài khoản ?</span>
+                    <span class="signin-help-show-signup">Đăng kí</span>
+                </div>
+            </form>
+        </div>
+        
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./jsFile/product.js"></script>
+    <script src="./jsFile/form.js" type="module">
+        
+    </script>
+    <script src="./jsFile/toast.js"></script>
 </body>
 </html>

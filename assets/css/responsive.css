@@ -74,7 +74,21 @@
         margin: 0 3px 16px 3px;
         font-size: 1.4rem;
     }
-    
+
+    /* login */
+    .login{
+        width: 70%;
+    }
+    .login-img{
+        display: none ;
+    }
+    #form-signup{
+        width: 100%;
+    }
+    #form-signin{
+        width: 100%;
+    }
+}    
 @media (max-width:590px){
     .margin-small{
         margin-top: 30px;
@@ -117,6 +131,10 @@
     }
     .footer__last-text--after::after{
         display: none;
+    }
+    /* form*/
+    .login{
+        width: 90%;
     }
 }
 @media (max-width:414px){
